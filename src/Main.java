@@ -5,7 +5,7 @@ public class Main {
         System.out.println(casset1.calculateCassetteCount(1999));
         System.out.println(casset1.calculateCassetteCount(2000));
         System.out.println(casset1.calculateCassetteCount(2001));
-        System.out.println(casset1.calculateCassetteCount(2600));
+        System.out.println(casset1.calculateCassetteCount(2700));
 
     }
 }
