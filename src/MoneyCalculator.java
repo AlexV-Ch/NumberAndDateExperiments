@@ -4,7 +4,7 @@ public class MoneyCalculator {
 
 
 
-    public int calculateCassetteCount(int banknoteCount) {
+    public static int calculateCassetteCount(int banknoteCount) {
         int packsCount = banknoteCount / BANKNOTES_PER_PACK +
                 (banknoteCount % BANKNOTES_PER_PACK == 0 ? 0 : 1);
         int packsCasset = packsCount / PACKS_IN_CASSETTE +
