@@ -1,7 +1,7 @@
 public class Main {
     public static void main(String[] args) {
         System.out.println();
-        // Сам
+        //  Сам
         MoneyCalculator casset1 = new MoneyCalculator();
         System.out.println(casset1.calculateCassetteCount(1999));
         System.out.println(casset1.calculateCassetteCount(2000));
