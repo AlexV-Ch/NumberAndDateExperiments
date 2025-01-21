@@ -1,6 +1,9 @@
+import java.time.LocalDate;
+import java.time.Period;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println();
+        /**
         //  Сам
         MoneyCalculator casset1 = new MoneyCalculator();
         System.out.println(casset1.calculateCassetteCount(1999));
@@ -17,6 +20,16 @@ public class Main {
         analytics.countVisit();
         int visits = analytics.countVisit();
         System.out.println("Всего посещений: " + visits);
+        */
+        System.out.println(getPeriodFromYavaBirthday());
+        }
+        public static String getPeriodFromYavaBirthday() {
+            LocalDate birthday = LocalDate.of(1995, 5, 23);
+            Period period = birthday.until(LocalDate.now());
+            System.out.println(period);
+            return period.getYears() + " years, " +
+                    period.getMonths() + " months, " +
+                    period.getDays() + " days";
+        }
 
-    }
 }
